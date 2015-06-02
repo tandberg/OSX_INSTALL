@@ -15,6 +15,9 @@ dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk 
 dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/iBooks/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk '/Notes/ {print NR}') && /usr/libexec/PlistBuddy -c "Delete persistent-apps:$dloc" ~/Library/Preferences/com.apple.dock.plist && killall Dock
 
+## INSTALL XCODE
+xcode-select --install
+
 ## INSTALL OH MY ZSH AND SET ZSH AS DEFAULT SHELL
 sudo curl -L http://install.ohmyz.sh | sh
 chsh -s /bin/zsh
@@ -46,14 +49,17 @@ brew cask install 1password
 brew cask install alfred
 brew cask install angry-ip-scanner
 brew cask install calibre
+brew cask install dash
 brew cask install debookee
 brew cask install evernote
+brew cask install fantastical
 brew cask install firefox
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install kodi
 brew cask install mou
 brew cask install opera
+brew cask install omnifocus
 brew cask install postgres
 brew cask install slack
 brew cask install spotify
