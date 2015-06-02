@@ -19,10 +19,6 @@ dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk 
 xcode-select --install
 read -p "Press any key to continue." -n1 -s
 
-## INSTALL OH MY ZSH AND SET ZSH AS DEFAULT SHELL
-sudo curl -L http://install.ohmyz.sh | sh
-chsh -s /bin/zsh
-
 ## Brew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -70,6 +66,9 @@ brew cask install transmission
 brew cask install vitrualbox
 brew cask install vlc
 brew cask install sublime-text
+
+## INSTALL OH MY ZSH AND SET ZSH AS DEFAULT SHELL
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
 ## RUN A MACOS UPDATE
 sudo softwareupdate --install -all
