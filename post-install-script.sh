@@ -17,6 +17,7 @@ dloc=$(defaults read com.apple.dock persistent-apps | grep _CFURLString\" | awk 
 
 ## INSTALL XCODE
 xcode-select --install
+read -p "Press any key to continue." -n1 -s
 
 ## INSTALL OH MY ZSH AND SET ZSH AS DEFAULT SHELL
 sudo curl -L http://install.ohmyz.sh | sh
@@ -28,6 +29,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 ### CLI tools
 brew install caskroom/cask/brew-cask
 brew install curl
+brew install Caskroom/cask/java
 brew install elasticsearch
 brew install gcc
 brew install git
