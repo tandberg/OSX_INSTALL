@@ -68,6 +68,7 @@ brew cask install vitrualbox
 brew cask install vlc
 brew tap caskroom/versions
 brew cask install sublime-text3
+brew cask install google-chrome-canary
 
 ## INSTALL OH MY ZSH AND SET ZSH AS DEFAULT SHELL
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
