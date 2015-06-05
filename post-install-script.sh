@@ -46,6 +46,7 @@ brew install wget
 brew cask install 1password
 brew cask install alfred
 brew cask install angry-ip-scanner
+brew cask install asepsis
 brew cask install calibre
 brew cask install dash
 brew cask install debookee
