@@ -66,7 +66,8 @@ brew cask install steam
 brew cask install transmission
 brew cask install vitrualbox
 brew cask install vlc
-brew cask install sublime-text
+brew tap caskroom/versions
+brew cask install sublime-text3
 
 ## INSTALL OH MY ZSH AND SET ZSH AS DEFAULT SHELL
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
